@@ -1,11 +1,12 @@
 <!DOCTYPE html><html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover"><title>GTM Planner</title>
+<meta name="gtm-version" content="20261017b"><!-- cache-bust 20261017b -->
 <style>
 :root{--navy:#1b2a4a;--cream:#fbf6ec;--gold:#c9a24a;--ink:#222;--line:#e6dcc6}
 *{box-sizing:border-box}body{margin:0;font:16px/1.4 -apple-system,Segoe UI,Roboto,sans-serif;background:var(--cream);color:var(--ink);overflow-x:hidden;padding-bottom:84px}
 header{background:var(--navy);color:var(--cream);padding:14px 16px;position:sticky;top:0;z-index:5}header h1{margin:0;font-size:19px}header small{color:var(--gold)}
 main{padding:12px;max-width:760px;margin:auto}section{display:none}section.on{display:block}
 nav{position:fixed;bottom:0;left:0;right:0;display:flex;background:var(--navy);padding-bottom:env(safe-area-inset-bottom);z-index:9}
-nav button{flex:1;background:none;border:0;color:var(--cream);padding:14px 2px;font-size:14px;min-height:60px}nav button.on{color:var(--gold);border-top:3px solid var(--gold)}
+nav button{flex:1;background:none;border:0;color:var(--cream);padding:12px 1px;font-size:12px;min-height:60px}nav button.on{color:var(--gold);border-top:3px solid var(--gold)}
 .card{background:#fff;border:1px solid var(--line);border-radius:12px;padding:12px;margin:10px 0}
 .banner{background:var(--navy);color:var(--cream);border-left:6px solid var(--gold);border-radius:12px;padding:14px}
 h2{color:var(--navy);font-size:18px;margin:16px 0 6px;border-bottom:2px solid var(--gold);padding-bottom:4px}h3{margin:4px 0;color:var(--navy);font-size:16px}
@@ -16,15 +17,64 @@ input,select,textarea,button{font:inherit}input,select,textarea{width:100%;paddi
 label.ck{display:flex;gap:10px;align-items:center;padding:10px 4px;border-bottom:1px solid var(--line);min-height:48px;word-break:break-word}label.ck input{width:24px;height:24px;min-height:0;margin:0;flex:none}
 label.ck.done span{text-decoration:line-through;color:#888}.x{background:none;border:0;color:#a33;font-size:20px;padding:6px 10px;margin-left:auto}
 a.tap{display:inline-block;padding:10px 14px;background:var(--cream);border:1px solid var(--gold);border-radius:10px;color:var(--navy);text-decoration:none;margin:4px 4px 0 0}
-.muted{color:#777;font-size:13px}
+.muted{color:#777;font-size:13px}.card p{margin:6px 0}
 @media print{nav,header .tools,.noprint{display:none!important}section{display:block!important}body{padding:0}}
 </style></head><body>
 <header><h1>GTM Planner</h1><small>Sipopedia · Zisel Jewelry · Ai RnD — goal: first paying customer</small></header>
 <main>
 <section id="pipeline"></section><section id="contacts"></section><section id="products"></section><section id="plan"></section>
+<section id="team">
+<div class="banner"><b>Sip Studies · company org</b><br>Static reference — not stored in your phone data. Updated Oct 17, 2026.</div>
+
+<h2>Leadership</h2>
+<div class="card">
+<h3>Jonathan Yu</h3>
+<p class="muted">Owner — decides.</p>
+</div>
+<div class="card">
+<h3>SipChief</h3>
+<p>Chief of Staff. Coordinates priorities across design, ship and ops; routes work to the right teammate; surfaces decisions and blockers.</p>
+</div>
+
+<h2>Lines of business</h2>
+<div class="card">
+<h3>1. Sipopedia</h3>
+<p>Sipopedia.com, SipStudies.com and Sip Studies overall.</p>
+<p><b>Build team</b> (updated Oct 15): To-Do Teddy, LinkedIn Lenny and Business Card Benny — coordinated by SipChief, which divides tasks among them.</p>
+<p><b>Coder Cody</b> — coding lead. <b>Sippy</b> (Codex on Jonathan's PC) — local build partner.</p>
+</div>
+<div class="card">
+<h3>2. Ai RnD</h3>
+<p>Client AI work (example: Zisel Jewelry). Coder Cody codes; SipChief coordinates. Invoices go out as <b>Ai RnD by Sip Studies</b>.</p>
+</div>
+<div class="card">
+<h3>3. Somm Support</h3>
+<p>Long-term water research, led by <b>Somm Sage</b>.</p>
+</div>
+<div class="card">
+<h3>4. Breakthru</h3>
+<p>Jonathan's separate 9–5 day job, led by <b>Breakthru Ben</b>.</p>
+</div>
+
+<h2>Who handles what</h2>
+<div class="card">
+<p><span class="pill">Design</span> Designer Daisy (Figma and Canva) · Business Card Benny (cards and brand assets)</p>
+<p><span class="pill">Ship</span> Coder Cody (sites and apps) and cloud coding agents · Sippy locally</p>
+<p><span class="pill">Ops</span> To-Do Teddy (monday.com, Calendar, Drive and Docs, status and deadlines)</p>
+<p><span class="pill">Biz / marketing</span> LinkedIn Lenny — also manages the other bots and pulls Jonathan in for decisions</p>
+<p><span class="pill">Inbox</span> Inbox Ivy and Inbox Iris (estean3) · Inbox Jade and Inbox Jett (jonyu3)</p>
+</div>
+
+<h2>Recent changes</h2>
+<div class="card">
+<p><b>Oct 12</b> — Four teams defined.</p>
+<p><b>Oct 15</b> — Sipopedia build team set as Teddy, Lenny and Benny; SipChief divides the work instead of doing it all.</p>
+<p><b>Oct 17</b> — GTM planner added (this app).</p>
+</div>
+</section>
 <div class="card noprint"><h3>Backup</h3><div class="row"><button class="btn" onclick="exp()">Export JSON</button><button class="btn o" onclick="document.getElementById('imp').click()">Import JSON</button><button class="btn g" onclick="copyTxt()">Copy as text</button></div><input type="file" id="imp" accept="application/json" hidden onchange="imp(this)"><p class="muted">All data stays in this browser (localStorage). Nothing is uploaded. Export regularly.</p></div>
 </main>
-<nav><button data-t="pipeline">Pipeline</button><button data-t="contacts">Contacts</button><button data-t="products">Products</button><button data-t="plan">Plan</button></nav>
+<nav><button data-t="pipeline">Pipeline</button><button data-t="contacts">Contacts</button><button data-t="products">Products</button><button data-t="plan">Plan</button><button data-t="team">Team</button></nav>
 <script>
 const STAGES=["Card handed out","Follow-up sent","Demo or site shown","Payment attempted","Customer"];
 const KEY="gtmPlanner.v1";const today=()=>new Date().toISOString().slice(0,10);
